@@ -1,12 +1,17 @@
-# React + Vite
+Bonus Episode 1 - Dev Tinder
+<BrowserRouter basename="/">
+    <Routes>
+        <Route path="/login" element={<Login/>} />
+    </Routes>
+</BrowserRouter>
+    basename is where your application root points to
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+    57 min - Explaining Routing
+    Creating a Body component
+    Inside my Body component i always have my Navbar, Middle Content and Footer
+    If my Route is /login then i want to show Login Page
+    If my Route is / then i want to show Home Page
+    If my Route is /cards then i want to show Cards Page
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Bonus Episode 2
+22min - CORS error
