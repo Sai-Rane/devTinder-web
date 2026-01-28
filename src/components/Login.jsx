@@ -5,17 +5,21 @@ const Login = () => {
   const [emailId, setEmailId] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin=async()=>{
+  const handleLogin = async () => {
     try {
-        const res=await axios.post("",{
-            emailID:emailId,
-            password:password
-        })
-        console.log('res', res)
+      const res = await axios.post(
+        "http://localhost:7777/login",
+        {
+          emailId: emailId,
+          password: password,
+        },
+        { withCredentials: true },
+      );
+      console.log("res", res);
     } catch (error) {
-        console.log('error', error)
+      console.log("error", error);
     }
-  }
+  };
   return (
     <div className="flex justify-center my-10">
       <div className="card bg-base-300 w-96 shadow-sm">
@@ -48,7 +52,9 @@ const Login = () => {
             </label>
           </div>
           <div className="card-actions justify-center m-2">
-            <button className="btn btn-primary" onClick={handleLogin}>Login</button>
+            <button className="btn btn-primary" onClick={handleLogin}>
+              Login
+            </button>
           </div>
         </div>
       </div>
