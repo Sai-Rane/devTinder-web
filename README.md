@@ -19,3 +19,7 @@ Bonus Episode 2
 Episode 16
 20 min - CORS error
 When you are trying to make an API call from your frontend to your backend, the browser will send a preflight request to check if the API call is allowed.
+
+36 min - To set token in your cookies , you need to whitelist your frontend domain in your backend.
+48 min - Create a redux store, once you have created the redux store you have to provide it to the application
+your store consists of slices
